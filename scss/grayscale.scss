@@ -83,7 +83,7 @@ a {
     font-weight: 700;
 
     img {
-      height: 1.75rem;
+      height: 3rem;
       transition: 300ms ease-out;
 
       &.blue-img {
@@ -100,8 +100,8 @@ a {
     .nav-item {
 
       font-size: 16px;
-      width: 120px;
-      height: 40px;
+      width: 140px;
+      height: 50px;
 
       -webkit-transition: background 0.3s ease-in-out;
       -moz-transition: background 0.3s ease-in-out;
@@ -116,16 +116,9 @@ a {
         width: 100%;
 
         font-size: 18px;
-        // font-weight:
+        line-height: 33px;
       }
 
-      // &::after {
-      //   content: '';
-      //   height:100%;
-      //   display: inline-block;
-      //   width: 0;
-      //   vertical-align: middle;
-      // }
       &:hover {
         color: fade(white, 80%);
         outline: none;
@@ -175,7 +168,7 @@ a {
 
   }
   @media(min-width:992px) {
-    padding-top: 20px;
+    padding-top: 3rem;
     padding-bottom: 20px;
 
     -webkit-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
@@ -186,7 +179,7 @@ a {
     border-bottom: none;
     background: transparent;
     &.navbar-shrink {
-      height: 50px;
+      height: 5rem;
       padding-top: 10px;
       padding-bottom: 10px;
 
@@ -210,6 +203,7 @@ a {
   width: 100%;
   height: auto;
   padding: 200px 0;
+  padding-top: 15rem;
   text-align: center;
 
   color: white;
@@ -246,7 +240,7 @@ a {
     width: 50%;
     display: inline-block;
     box-sizing: border-box;
-    padding-top: 9rem;
+    // padding-top: 9rem;
     vertical-align: top;
   }
 
@@ -272,19 +266,23 @@ a {
       z-index: 40;
     }
   }
+
+  .left {
+    padding-top: 8rem;
+  }
+
   .right {
     img {
       position: relative;
       z-index: 40;
       display: inline-block;
-      height: 20rem;
+      height: 40rem;
       pointer-events: none;
     }
   }
 
   @media(min-width:768px) {
     height: 100%;
-    padding: 0;
     padding-bottom: 5rem;
   }
 }
@@ -328,17 +326,17 @@ a {
   .left {
     width: 30%;
     padding-left: 6%;
-    padding-top: 4rem;
+    padding-top: 13rem;
     text-align: left;
 
     h2 {
       margin-bottom: 1.5rem;
-      font-size: 24px;
+      font-size: 46px;
       // line-height: 64px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 18px;
       letter-spacing: .02em;
     }
 
@@ -358,21 +356,21 @@ a {
 
   .right {
     width: 70%;
+    padding-top: 3rem;
     position: relative;
 
     img:first-child {
       position: absolute;
       left: 63%;
       top: 50%;
-      height: 9rem;
-
+      height: 15rem;
       pointer-events: none;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%,-38%)
     }
 
     .team {
       position: relative;
-      height: 25rem;
+      height: 45rem;
       pointer-events: none;
     }
   }
@@ -425,7 +423,7 @@ footer {
   position: relative;
   background-color: white;
   color: black;
-  padding: 50px 5%;
+  padding: 7rem 6%;
 
   .nice-footer {
     position: absolute;
@@ -433,7 +431,7 @@ footer {
     left: 50%;
     right: 10%;
 
-    height: 7rem;
+    height: 14rem;
     pointer-events: none;
     // z-index: -1;
     transform: translate(0, -38%);

@@ -60,7 +60,7 @@ a {
   #mainNav .navbar-brand {
     font-weight: 700; }
     #mainNav .navbar-brand img {
-      height: 1.75rem;
+      height: 3rem;
       transition: 300ms ease-out; }
       #mainNav .navbar-brand img.blue-img {
         display: none;
@@ -69,8 +69,8 @@ a {
     color: white; }
   #mainNav .navbar-nav .nav-item {
     font-size: 16px;
-    width: 120px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out;
@@ -80,7 +80,8 @@ a {
       display: block;
       height: 100%;
       width: 100%;
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 33px; }
     #mainNav .navbar-nav .nav-item:hover {
       color: fade(white, 80%);
       outline: none;
@@ -108,7 +109,7 @@ a {
       background: rgba(0, 0, 0, 0.3); }
   @media (min-width: 992px) {
     #mainNav {
-      padding-top: 20px;
+      padding-top: 3rem;
       padding-bottom: 20px;
       -webkit-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
       -moz-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
@@ -117,7 +118,7 @@ a {
       border-bottom: none;
       background: transparent; }
       #mainNav.navbar-shrink {
-        height: 50px;
+        height: 5rem;
         padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -132,6 +133,7 @@ a {
   width: 100%;
   height: auto;
   padding: 200px 0;
+  padding-top: 15rem;
   text-align: center;
   color: white;
   background-color: black;
@@ -159,7 +161,6 @@ a {
     width: 50%;
     display: inline-block;
     box-sizing: border-box;
-    padding-top: 9rem;
     vertical-align: top; }
   .masthead .intro-body {
     padding-left: 6%;
@@ -176,16 +177,17 @@ a {
     .masthead .intro-body .btn-circle {
       position: relative;
       z-index: 40; }
+  .masthead .left {
+    padding-top: 8rem; }
   .masthead .right img {
     position: relative;
     z-index: 40;
     display: inline-block;
-    height: 20rem;
+    height: 40rem;
     pointer-events: none; }
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
-      padding: 0;
       padding-bottom: 5rem; } }
 
 .btn-circle {
@@ -217,13 +219,13 @@ a {
   .content-section .left {
     width: 30%;
     padding-left: 6%;
-    padding-top: 4rem;
+    padding-top: 13rem;
     text-align: left; }
     .content-section .left h2 {
       margin-bottom: 1.5rem;
-      font-size: 24px; }
+      font-size: 46px; }
     .content-section .left p {
-      font-size: 14px;
+      font-size: 18px;
       letter-spacing: .02em; }
     .content-section .left h4 {
       font-size: 18px;
@@ -234,17 +236,18 @@ a {
         display: block; }
   .content-section .right {
     width: 70%;
+    padding-top: 3rem;
     position: relative; }
     .content-section .right img:first-child {
       position: absolute;
       left: 63%;
       top: 50%;
-      height: 9rem;
+      height: 15rem;
       pointer-events: none;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -38%); }
     .content-section .right .team {
       position: relative;
-      height: 25rem;
+      height: 45rem;
       pointer-events: none; }
 
 .btn {
@@ -283,13 +286,13 @@ footer {
   position: relative;
   background-color: white;
   color: black;
-  padding: 50px 5%; }
+  padding: 7rem 6%; }
   footer .nice-footer {
     position: absolute;
     top: 50%;
     left: 50%;
     right: 10%;
-    height: 7rem;
+    height: 14rem;
     pointer-events: none;
     transform: translate(0, -38%); }
   footer .copy {
