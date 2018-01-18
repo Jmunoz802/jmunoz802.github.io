@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'mixins.scss';
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -24,12 +25,12 @@ h4,
 h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  // font-weight: 600;
 
   margin: 0 0 35px;
 
   letter-spacing: 1px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 p {
@@ -62,6 +63,8 @@ a {
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+  padding-left: 6%;
+  padding-right: 6%;
   margin-bottom: 0;
 
   text-transform: uppercase;
@@ -78,19 +81,55 @@ a {
   }
   .navbar-brand {
     font-weight: 700;
+
+    img {
+      height: 1.75rem;
+      transition: 300ms ease-out;
+
+      &.blue-img {
+        display: none;
+        opacity: 0;
+      }
+    }
   }
+
   a {
     color: white;
   }
   .navbar-nav {
     .nav-item {
+
+      font-size: 16px;
+      width: 120px;
+      height: 40px;
+
       -webkit-transition: background 0.3s ease-in-out;
       -moz-transition: background 0.3s ease-in-out;
       transition: background 0.3s ease-in-out;
+
+      text-align: center;
+      vertical-align: middle;
+
+      .nav-link {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        font-size: 18px;
+        // font-weight:
+      }
+
+      // &::after {
+      //   content: '';
+      //   height:100%;
+      //   display: inline-block;
+      //   width: 0;
+      //   vertical-align: middle;
+      // }
       &:hover {
         color: fade(white, 80%);
         outline: none;
-        background-color: transparent;
+        background-color: #333333;
       }
       &:active,
       &:focus {
@@ -99,18 +138,55 @@ a {
       }
     }
   }
+
+  &.navbar-shrink.white {
+    background: #f1f1f5;
+    border-bottom-color: #cacade !important;
+
+    a {
+      color: black;
+    }
+
+    img {
+      &.blue-img {
+        display: block;
+        opacity: 1;
+      }
+      &.white-img {
+        display: none;
+        opacity: 0;
+      }
+    }
+
+    .navbar-nav .nav-item {
+      &:hover {
+        background: #E0E0EA;
+
+        .nav-link {
+          background: none;
+          color: black;
+        }
+      }
+
+      .nav-link:active {
+        background: rgba(black, .3);
+      }
+    }
+
+  }
   @media(min-width:992px) {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -webkit-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
 
     border-bottom: none;
     background: transparent;
     &.navbar-shrink {
+      height: 50px;
       padding-top: 10px;
       padding-bottom: 10px;
 
@@ -121,7 +197,7 @@ a {
       outline: none;
       background-color: rgba(white, .3);
       &:hover {
-        color: white;
+        // color: white;
       }
     }
   }
@@ -129,42 +205,89 @@ a {
 
 .masthead {
   display: table;
+  position: relative;
 
   width: 100%;
   height: auto;
   padding: 200px 0;
-
   text-align: center;
 
   color: white;
-  background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
+  // background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .intro-body {
-    display: table-cell;
 
-    vertical-align: middle;
+  #experience {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // perspective: 800px;
+    width: 100%;
+    // min-height: 580px;
+    overflow: hidden;
+    // position: relative;
+    z-index: 20;
+  }
+  #lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    pointer-events: none;
+    opacity: .55;
+  }
+
+  .left, .right {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-top: 9rem;
+    vertical-align: top;
+  }
+
+  .intro-body {
+    // display: table-cell;
+    padding-left: 6%;
+
+    text-align: left;
     .brand-heading {
-      font-size: 50px;
+      font-size: 86px;
+      line-height: 81px;
+      margin-bottom: 0;
     }
     .intro-text {
-      font-size: 18px;
+      font-size: 21px;
+      margin-top: 3rem;
+      line-height: 28px;
+      max-width: 28rem;
+    }
+
+    .btn-circle {
+      position: relative;
+      z-index: 40;
     }
   }
+  .right {
+    // padding-top: 200px;
+
+    img {
+      position: relative;
+      z-index: 40;
+      display: inline-block;
+      height: 20rem;
+      pointer-events: none;
+    }
+  }
+
   @media(min-width:768px) {
     height: 100%;
     padding: 0;
-    .intro-body {
-      .brand-heading {
-        font-size: 100px;
-      }
-      .intro-text {
-        font-size: 22px;
-      }
-    }
+    padding-bottom: 5rem;
   }
 }
 
@@ -193,33 +316,93 @@ a {
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  color: black;
+  background: #f1f1f5;
+  padding-top: 3rem;
+  // padding-bottom: 3rem;
+
+  .left, .right {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .left {
+    width: 30%;
+    padding-left: 6%;
+    padding-top: 4rem;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 24px;
+      // line-height: 64px;
+    }
+
+    p {
+      font-size: 14px;
+      letter-spacing: .02em;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        display: block;
+      }
+    }
+  }
+
+  .right {
+    width: 70%;
+    position: relative;
+
+    img:first-child {
+      position: absolute;
+      left: 63%;
+      top: 50%;
+      height: 9rem;
+
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+    }
+
+    .team {
+      position: relative;
+      height: 25rem;
+      pointer-events: none;
+    }
+  }
 }
 
-.download-section {
-  color: white;
-  background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#map {
-  width: 100%;
-  height: 300px;
-}
-@media(min-width:992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
-  }
-}
+// .download-section {
+//   color: white;
+//   background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
+//   background-color: black;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+//
+// #map {
+//   width: 100%;
+//   height: 300px;
+// }
+// @media(min-width:992px) {
+//   .content-section {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//   }
+//   #map {
+//     height: 350px;
+//   }
+// }
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -265,11 +448,82 @@ ul.banner-social-buttons {
 }
 
 footer {
-  padding: 50px 0;
+  position: relative;
+  background-color: white;
+  color: black;
+  padding: 50px 5%;
+
+  .nice-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 10%;
+
+    height: 7rem;
+    pointer-events: none;
+    // z-index: -1;
+    transform: translate(0, -38%);
+  }
+
+  .copy {
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    // font-family: Aktiv Grotesk;
+    // Light
+    font-size: 26px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+
+    &:nth-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+
   p {
+    // Aktiv Grotesk | Light | 14px |
+    letter-spacing: 0.1em;
     font-size: 14px;
 
     margin: 0;
+
+    &.line-one {
+      text-transform: uppercase;
+    }
+  }
+
+  .footer-link {
+    position: relative;
+
+    font-size: 27px;
+    color: black;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+
+      transition: 300ms ease-out;
+      border-top: 1px solid black;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .social-media {
+    margin-bottom: 5rem;
+    ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
   }
 }
 

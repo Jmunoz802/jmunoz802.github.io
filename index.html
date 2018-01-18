@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Nice Engineering</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,121 +27,96 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/nice-logo-white.png"/></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="white-img" src="img/nice-logo-white.png"/><img class="blue-img" src="img/nice-logo-blue.png"/></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#footer">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <!-- Intro Header -->
     <header class="masthead">
-      <div class="intro-body right">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Grayscale</h1>
-              <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                <br>Created by Start Bootstrap.</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div id="experience">
+        <canvas id="lines"></canvas>
       </div>
-      <div class="left">
-        <div class="grid" style="background: url('img/dot-grid-about.png')">
-          <img src="img/nice-letter.png" />
-        </div>
+      <div class="intro-body left">
+        <h1 class="brand-heading">Hello,</h1>
+        <h1 class="brand-heading">we are nice.</h1>
+        <p class="intro-text">We build beautiful branded web products and experiences.</p>
+        <a href="#about" class="btn btn-circle js-scroll-trigger">
+          <i class="fa fa-angle-double-down animated"></i>
+        </a>
+      </div>
+      <div class="intro-body right">
+        <img src="img/nice-letter.png" />
       </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Grayscale</h2>
-            <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-            <p>This theme features stock photos by
-              <a href="http://gratisography.com/">Gratisography</a>
-              along with a custom Google Maps skin courtesy of
-              <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
-          </div>
-        </div>
+      <div class="left">
+        <h2>We are a Texas-based technology agency</h2>
+        <p>
+          We love working with shapers, entrepreneurs, and visionaries who seek to improve their business efficiency or drive impact.
+        </p>
+        <h4>Our Specialty</h4>
+        <ul class="specialty">
+          <li>
+            _Software Solutions
+          </li>
+          <li>
+            _Product Design
+          </li>
+          <li>
+            _Branded eCommerce
+          </li>
+        </ul>
+      </div><!--
+      --><div class="right">
+        <img src="img/about-us-element.png" />
+        <img class="team" src="img/nice-team.png"/>
       </div>
     </section>
-
-    <!-- Download Section -->
-    <!-- <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact Start Bootstrap</h2>
-            <p>Feel free to leave us a comment on the
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
-              on Start Bootstrap to give some feedback about this theme!</p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
 
     <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Your Website 2017</p>
+    <footer id="footer">
+      <div class="nice-footer" style="background: url('img/nice-footer.png') center/cover no-repeat"></div>
+      <div class="copy">
+
+      <h2>Collaboration is key to shaping the future.</h2>
+      <h2>Let's get this conversation started.</h2>
+      <a class="footer-link" href="mailto:biz@niceengineeringllc.com">biz@niceengineeringllc.com</a>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="" class="email"><img /></a>
+            </li>
+            <li>
+              <a href="" class="facebook"><img /></a>
+            </li>
+            <li>
+              <a href="" class="instagram"><img /></a>
+            </li>
+            <li>
+              <a href="" class="linkedin"><img /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="line-one">&copy; 2018 Nice Engineering LLC.</p>
+        <p>All Rights Reserved</p>
       </div>
     </footer>
 
@@ -151,12 +126,14 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script src="js/experience.min.js"></script>
 
   </body>
 

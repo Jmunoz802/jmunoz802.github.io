@@ -1,5 +1,5 @@
 {
-  "title": "Grayscale",
+  "title": "Nice Engineering",
   "name": "startbootstrap-grayscale",
   "version": "4.0.0-beta.2",
   "description": "A grayscale one page HTML theme for Bootstrap.",
@@ -17,19 +17,21 @@
     "email": "feedback@startbootstrap.com"
   },
   "license": "MIT",
-  "author": "Start Bootstrap",
+  "author": "Nice Engineering",
   "contributors": [
-    "David Miller (http://davidmiller.io/)"
+    "Jay Melendez",
+    "Josan Munoz"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+    "url": "https://github.com/Jmunoz802/nice-bootstrap"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "jquery.easing": "^1.4.1"
+    "jquery.easing": "^1.4.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "browser-sync": "2.18.13",
