@@ -45,7 +45,6 @@ var waypoints = $('#about').waypoint(function(direction) {
   if(direction == "up"){
     $('#mainNav').removeClass('white');
   } else {
-    console.log("test");
     $('#mainNav').addClass('white');
   }
 })

@@ -33,7 +33,7 @@ gulp.task('sass', function() {
 gulp.task('minify-css', ['sass'], function() {
   return gulp.src('css/grayscale.css')
     .pipe(cleanCSS({
-      compatibility: 'ie8'
+      compatibility: 'ie10'
     }))
     .pipe(rename({
       suffix: '.min'
