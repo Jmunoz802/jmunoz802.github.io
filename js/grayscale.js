@@ -39,12 +39,14 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-})(jQuery); // End of use strict
+  var waypoint = $('#about').waypoint(function(direction) {
+    if(direction == "up"){
+      $('#mainNav').removeClass('white');
+    } else {
+      $('#mainNav').addClass('white');
+    }
+  }, {
+    offset: '80px'
+  });
 
-var waypoints = $('#about').waypoint(function(direction) {
-  if(direction == "up"){
-    $('#mainNav').removeClass('white');
-  } else {
-    $('#mainNav').addClass('white');
-  }
-})
+})(jQuery); // End of use strict
