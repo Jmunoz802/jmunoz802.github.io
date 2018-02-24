@@ -1,0 +1,68 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+.src-policy {
+  header {
+    padding-top: 10rem;
+  }
+
+  section {
+    padding: 0 6%;
+  }
+
+  .privacy-policy, .eula {
+    margin-bottom: 3rem;
+    padding: 1.5rem 6% 0;
+  }
+
+  .privacy-policy {
+
+    #ppBody {
+      font-size:11pt;
+      width:100%;
+      margin:0 auto;
+      text-align:justify;
+    }
+
+    #ppHeader {
+      /* font-family:verdana; */
+      font-size:21pt;
+      width:100%;
+      margin:0 auto;
+    }
+
+    .ppConsistencies {
+      display:none;
+    }
+
+  }
+
+  .innerText {
+    margin: 0 1.5rem;
+  }
+
+  .divider {
+    margin: 1.5rem 4%;
+
+    height: 1px;
+    background-color: white;
+  }
+
+  .eula {
+
+    h4 {
+      margin-bottom: 0.75rem;
+    }
+
+    .innerText {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    header {
+      padding-top: 5rem;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+  font-family: $rubik, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  background-color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $rubik;
+  // font-weight: 600;
+
+  margin: 0 0 35px;
+
+  letter-spacing: 1px;
+  // text-transform: uppercase;
+}
+
+p {
+  font-family: $rubik;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin: 0 0 25px;
+  @media(min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  color: $primary;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+
+    color: darken($primary, 20%);
+  }
+}
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 0;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid fade-out(white, .7);
+  background-color: black;
+
+  .navbar-toggler {
+    font-size: 14px;
+
+    padding: 11px;
+
+    color: white;
+    border: 1px solid white;
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+
+    img {
+      height: 3rem;
+      transition: 300ms ease-out;
+
+      &.blue-img {
+        display: none;
+        opacity: 0;
+      }
+    }
+  }
+
+  a {
+    color: white;
+  }
+  .navbar-nav {
+    .nav-item {
+
+      font-size: 16px;
+      min-width: 140px;
+      height: 50px;
+
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+
+      text-align: center;
+      vertical-align: middle;
+
+      .nav-link {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        font-size: 18px;
+        line-height: 33px;
+      }
+
+      &:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: #333333;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.navbar-shrink.white {
+    background: #f1f1f5;
+    border-bottom-color: #cacade !important;
+
+    a {
+      color: black;
+    }
+
+    img {
+      &.blue-img {
+        display: block;
+        opacity: 1;
+      }
+      &.white-img {
+        display: none;
+        opacity: 0;
+      }
+    }
+
+    .navbar-nav .nav-item {
+      &:hover {
+        background: #E0E0EA;
+
+        .nav-link {
+          background: none;
+          color: black;
+        }
+      }
+
+      .nav-link:active {
+        background: rgba(black, .3);
+      }
+    }
+
+  }
+  @media(min-width:992px) {
+    padding-top: 3rem;
+    padding-bottom: 20px;
+
+    -webkit-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+
+    border-bottom: none;
+    background: transparent;
+    &.navbar-shrink {
+      height: 5rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid fade-out(white, .7);
+      background: black;
+    }
+    .nav-link.active {
+      outline: none;
+      background-color: #e0e0ea;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  background-color: white;
+  color: black;
+  padding: 7rem 6%;
+
+  .nice-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // right: 10%;
+
+    max-height: 270px;
+    max-width: 869px;
+    height: auto;
+    width: 50%;
+    // height: 14rem;
+
+    pointer-events: none;
+    // z-index: -1;
+    transform: translate(0, -38%);
+  }
+
+  .copy {
+    position: relative;
+    z-index: 1;
+  }
+
+  h2 {
+    // font-family: Aktiv Grotesk;
+    font-weight: $light-font-weight;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+
+    &:nth-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  p {
+    // Aktiv Grotesk | Light | 14px |
+    letter-spacing: 0.1em;
+    font-size: 14px;
+
+    margin: 0;
+
+    &.line-one {
+      text-transform: uppercase;
+    }
+  }
+
+  .footer-link {
+    position: relative;
+
+    font-size: 27px;
+    font-family: $light-font-weight;
+    color: black;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+
+      transition: 300ms ease-out;
+      border-top: 1px solid black;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .social-media {
+    margin: 5rem 0;
+    // margin-bottom: 5rem;
+    // margin-top: 5rem;
+
+    ul {
+      padding-left: 0;
+      li {
+        position: relative;
+        display: inline-block;
+        margin-right: 30px;
+
+        a {
+          position: relative;
+          display: inline-block;
+          // width: 30px;
+
+          img {
+            transition: 300ms ease-out;
+
+            &:last-child {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              backface-visibility: hidden;
+
+              &:last-child {
+                opacity: 0;
+              }
+            }
+          }
+
+          &:hover {
+            img:first-child {
+              opacity: 0;
+            }
+            img:last-child {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright p {
+
+    font-weight: $light-font-weight;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #mainNav {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mainNav {
+    position: absolute;
+    border-bottom: none;
+
+    .collapse, .navbar-toggler {
+      display: none;
+    }
+  }
+
+  footer {
+    padding: 3rem 6%;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .footer-link {
+      font-size: 18px;
+    }
+
+    .social-media {
+      margin: 3rem 0;
+    }
+
+    .nice-footer {
+      position: initial;
+      width: 100%;
+      transform: none;
+      margin-bottom: 3rem;
+      // margin-top: 4rem;
+      // left: 0;
+      // top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #mainNav .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+}

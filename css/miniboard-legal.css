@@ -1,0 +1,46 @@
+/*!
+ * Start Bootstrap - Nice Engineering v4.0.0-beta.2 
+ * Copyright 2013-2018 Nice Engineering
+ */
+.src-policy header {
+  padding-top: 10rem; }
+
+.src-policy section {
+  padding: 0 6%; }
+
+.src-policy .privacy-policy, .src-policy .eula {
+  margin-bottom: 3rem;
+  padding: 1.5rem 6% 0; }
+
+.src-policy .privacy-policy #ppBody {
+  font-size: 11pt;
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify; }
+
+.src-policy .privacy-policy #ppHeader {
+  /* font-family:verdana; */
+  font-size: 21pt;
+  width: 100%;
+  margin: 0 auto; }
+
+.src-policy .privacy-policy .ppConsistencies {
+  display: none; }
+
+.src-policy .innerText {
+  margin: 0 1.5rem; }
+
+.src-policy .divider {
+  margin: 1.5rem 4%;
+  height: 1px;
+  background-color: white; }
+
+.src-policy .eula h4 {
+  margin-bottom: 0.75rem; }
+
+.src-policy .eula .innerText {
+  margin-bottom: 1.5rem; }
+
+@media screen and (max-width: 768px) {
+  .src-policy header {
+    padding-top: 5rem; } }

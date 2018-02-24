@@ -1,0 +1,233 @@
+/*!
+ * Start Bootstrap - Nice Engineering v4.0.0-beta.2 
+ * Copyright 2013-2018 Nice Engineering
+ */
+body {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 35px;
+  letter-spacing: 1px; }
+
+p {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 35px; } }
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3; }
+  a:focus, a:hover {
+    text-decoration: none;
+    color: #1d9b6c; }
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black; }
+  #mainNav .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: white;
+    border: 1px solid white; }
+  #mainNav .navbar-brand {
+    font-weight: 700; }
+    #mainNav .navbar-brand img {
+      height: 3rem;
+      transition: 300ms ease-out; }
+      #mainNav .navbar-brand img.blue-img {
+        display: none;
+        opacity: 0; }
+  #mainNav a {
+    color: white; }
+  #mainNav .navbar-nav .nav-item {
+    font-size: 16px;
+    min-width: 140px;
+    height: 50px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+    vertical-align: middle; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      display: block;
+      height: 100%;
+      width: 100%;
+      font-size: 18px;
+      line-height: 33px; }
+    #mainNav .navbar-nav .nav-item:hover {
+      color: fade(white, 80%);
+      outline: none;
+      background-color: #333333; }
+    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+      outline: none;
+      background-color: transparent; }
+  #mainNav.navbar-shrink.white {
+    background: #f1f1f5;
+    border-bottom-color: #cacade !important; }
+    #mainNav.navbar-shrink.white a {
+      color: black; }
+    #mainNav.navbar-shrink.white img.blue-img {
+      display: block;
+      opacity: 1; }
+    #mainNav.navbar-shrink.white img.white-img {
+      display: none;
+      opacity: 0; }
+    #mainNav.navbar-shrink.white .navbar-nav .nav-item:hover {
+      background: #E0E0EA; }
+      #mainNav.navbar-shrink.white .navbar-nav .nav-item:hover .nav-link {
+        background: none;
+        color: black; }
+    #mainNav.navbar-shrink.white .navbar-nav .nav-item .nav-link:active {
+      background: rgba(0, 0, 0, 0.3); }
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 3rem;
+      padding-bottom: 20px;
+      -webkit-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      -moz-transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      transition: 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background: transparent; }
+      #mainNav.navbar-shrink {
+        height: 5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: black; }
+      #mainNav .nav-link.active {
+        outline: none;
+        background-color: #e0e0ea; } }
+
+footer {
+  position: relative;
+  background-color: white;
+  color: black;
+  padding: 7rem 6%; }
+  footer .nice-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 270px;
+    max-width: 869px;
+    height: auto;
+    width: 50%;
+    pointer-events: none;
+    transform: translate(0, -38%); }
+  footer .copy {
+    position: relative;
+    z-index: 1; }
+  footer h2 {
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 0; }
+    footer h2:nth-child(2) {
+      margin-bottom: 2rem; }
+  footer p {
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    margin: 0; }
+    footer p.line-one {
+      text-transform: uppercase; }
+  footer .footer-link {
+    position: relative;
+    font-size: 27px;
+    font-family: 300;
+    color: black; }
+    footer .footer-link:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      transition: 300ms ease-out;
+      border-top: 1px solid black; }
+    footer .footer-link:hover:after {
+      width: 100%; }
+  footer .social-media {
+    margin: 5rem 0; }
+    footer .social-media ul {
+      padding-left: 0; }
+      footer .social-media ul li {
+        position: relative;
+        display: inline-block;
+        margin-right: 30px; }
+        footer .social-media ul li a {
+          position: relative;
+          display: inline-block; }
+          footer .social-media ul li a img {
+            transition: 300ms ease-out; }
+            footer .social-media ul li a img:last-child {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              backface-visibility: hidden; }
+              footer .social-media ul li a img:last-child:last-child {
+                opacity: 0; }
+          footer .social-media ul li a:hover img:first-child {
+            opacity: 0; }
+          footer .social-media ul li a:hover img:last-child {
+            opacity: 1; }
+  footer .copyright p {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.1em; }
+
+@media screen and (max-width: 1024px) {
+  #mainNav {
+    padding: 1rem 3rem; } }
+
+@media screen and (max-width: 768px) {
+  #mainNav {
+    position: absolute;
+    border-bottom: none; }
+    #mainNav .collapse, #mainNav .navbar-toggler {
+      display: none; }
+  footer {
+    padding: 3rem 6%; }
+    footer h2 {
+      font-size: 24px; }
+    footer .footer-link {
+      font-size: 18px; }
+    footer .social-media {
+      margin: 3rem 0; }
+    footer .nice-footer {
+      position: initial;
+      width: 100%;
+      transform: none;
+      margin-bottom: 3rem; } }
+
+@media screen and (max-width: 425px) {
+  #mainNav .navbar-brand {
+    width: 100%;
+    text-align: center; } }

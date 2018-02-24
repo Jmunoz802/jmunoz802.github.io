@@ -1,8 +1,8 @@
 {
   "title": "Nice Engineering",
-  "name": "startbootstrap-grayscale",
+  "name": "startbootstrap-nice",
   "version": "4.0.0-beta.2",
-  "description": "A grayscale one page HTML theme for Bootstrap.",
+  "description": "The HTML site for Nice Engineering.",
   "keywords": [
     "css",
     "sass",
@@ -37,6 +37,7 @@
     "browser-sync": "2.18.13",
     "gulp": "^3.9.1",
     "gulp-clean-css": "3.9.0",
+    "gulp-concat": "^2.6.1",
     "gulp-header": "1.8.9",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
