@@ -17,7 +17,8 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
-const compileStyle = () => {
+const compileStyle = (cb) => {
+  cb();
   return gulp.src('scss/*.scss')
   .pipe(sass())
   .pipe(cleanCSS({
@@ -33,8 +34,9 @@ const compileStyle = () => {
   }))
 }
 
-const watchStyle = () => {
-  gulp.watch('scss/*.scss', compileStyle);
+const watchStyle = (cb) => {
+  cb();
+  return gulp.watch('scss/*.scss', compileStyle);
 }
 
 const processSCSS = () => {
@@ -69,7 +71,8 @@ const minifyCSS = () => {
 // Minify compiled CSS
 gulp.task('minify-css', gulp.series('sass', minifyCSS));
 
-const concatCSS = () => {
+const concatCSS = (cb) => {
+  cb();
   return gulp.src(['css/*.min.css', '!css/style.min.css'])
   .pipe(concat('style.min.css'))
   .pipe(gulp.dest('css'))
@@ -80,7 +83,8 @@ const concatCSS = () => {
 
 gulp.task('concat-css', gulp.series('minify-css', concatCSS));
 
-const compileScript = () => {
+const compileScript = (cb) => {
+  cb();
   return gulp.src(['js/*.js', '!js/*.min.js'])
   .pipe(uglify())
   .pipe(header(banner, {
@@ -95,20 +99,34 @@ const compileScript = () => {
   }))
 }
 
-const watchScript = () => {
-  gulp.watch(['js/*.js', '!js/*.min.js'], compileScript);
+const watchScript = (cb) => {
+  cb();
+  return gulp.watch([
+    'js/*.js',
+    '!js/*.min.js',
+    'app/**/*.js',
+    '!app/**/*.min.js'
+    ],
+    compileScript);
 }
 
-const watchMarkup = () => {
-  gulp.watch('*.html', () => {browserSync.reload({stream: true})});
+const browserReload = (cb) => {
+  browserSync.reload();
+  cb();
 }
 
-const browser = () => {
+const watchMarkup = (cb) => {
+  cb();
+  return gulp.watch(['**/*.html'], browserReload);
+}
+
+const browser = (cb) => {
+  cb();
   browserSync.init({
     server: {
       baseDir: './',
       single: "true"
-    },
+    }
   })
 }
 
@@ -132,7 +150,7 @@ const compile = gulp.parallel(compileStyle, compileScript)
 const watch = gulp.parallel(watchStyle, watchMarkup, watchScript)
 const serve = gulp.series(compile, browser)
 
-const defaultTasks = gulp.parallel(watch, serve)
+const defaultTasks = gulp.series(watch, serve)
 
 export {
   compile,
