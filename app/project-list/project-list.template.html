@@ -1,0 +1,28 @@
+<div class="project-list">
+  <h1 class="section-title">Our Work</h1>
+  <slick class="slider" ng-if="$ctrl.slickProjectsConfigLoaded" settings="$ctrl.slickProjectsConfig">
+    <div class="project-container" ng-repeat="project in $ctrl.projects">
+      <div class="project-bg desktop" style="background: url('{{project.imgUrl}}') no-repeat center/cover"></div>
+      <div class="project-bg mobile" style="background: url('{{project.mobileImgUrl}}') no-repeat top/cover"></div>
+      <div class="project">
+        <!-- <div class="img-container">
+          <img ng-if="project.imgUrl" src="{{project.imgUrl}}"/>
+        </div> -->
+        <div class="gradient"></div>
+        <div class="copy">
+          <h3 class="title">{{project.name}}</h3>
+          <div class="body">
+            <h4 ng-if='project.startDate && project.endDate'> {{project.startDate}} - {{project.endDate}}</h4>
+            <h4 ng-if='!project.startDate && project.endDate'> Released {{project.endDate}}</h4>
+            <p>{{project.description}}</p>
+            <a class="underlined-link" href="{{project.projectURL}}">
+              Check it out, HERE, for yourself
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </slick>
+  <div class="slick-dots-container"></div>
+  <div class="slick-arrows-container"></div>
+</div>

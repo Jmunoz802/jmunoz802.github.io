@@ -1,0 +1,38 @@
+[
+  {
+    "name": "SRC Miniboard",
+    "projectURL": "https://www.twitch.tv/ext/8jefzhtahl455ftq87euflde7ad69m-1.1.0",
+    "startDate": "January, 2018",
+    "endDate": "March, 2018",
+    "imgUrl": "img/projects/src-miniboard-banner.png",
+    "mobileImgUrl": "img/projects/mobile-src-miniboard-banner.png",
+    "description": "SRC Miniboard is a serverless solution for livestream entertainment on the Twitch platform that leverages two seperate API's to improve viewer retention."
+  },
+  {
+    "name": "Lezay Redesign",
+    "projectURL": "https://www.lezay.com/",
+    "startDate": "April, 2018",
+    "endDate": "May, 2018",
+    "imgUrl": "img/projects/lezay-banner.png",
+    "mobileImgUrl": "img/projects/mobile-lezay-banner.png",
+    "description": "Lezay is an international business based in Germany that focuses on offering curated beauty products based on the customers individual's needs."
+  },
+  {
+    "name": "Accelerate Coach",
+    "projectURL": "https://www.accelerate-coach.com/",
+    "startDate": "June, 2018",
+    "endDate": "July, 2018",
+    "imgUrl": "img/projects/acc-coach-banner.png",
+    "mobileImgUrl": "img/projects/mobile-acc-coach-banner.png",
+    "description": "Accelerate coach is a European business and Google partner that coaches business growth and strategy to small and mid-level business."
+  },
+  {
+    "name": "Nice.Engineering",
+    "projectURL": "",
+    "startDate": "",
+    "endDate": "",
+    "imgUrl": "img/projects/nice-engineering-banner.png",
+    "mobileImgUrl": "img/projects/mobile-nice-engineering-banner.png",
+    "description": ""
+  }
+]
