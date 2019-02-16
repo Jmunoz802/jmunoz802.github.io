@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="niceEngineering" lang="en">
 
   <head>
 
@@ -15,12 +15,12 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'> -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="vendor/slick/slick.css" rel="stylesheet">
+    <link href="vendor/slick/slick-theme.css" rel="stylesheet">
 
   </head>
 
@@ -29,18 +29,18 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="white-img" src="img/nice-logo-white.png"/><img class="blue-img" src="img/nice-logo-blue.png"/></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fa fa-bars"></i>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#footer">Contact</a>
           </li>
@@ -88,17 +88,19 @@
         </ul>
       </div><!--
       --><div class="right">
-        <div style="url('img/about-us-element.png') center/cover no-repeat"></div>
+        <div style="background: url('img/about-us-element.png') center/cover no-repeat;"></div>
         <img class="team" src="img/nice-team.png" />
       </div>
     </section>
+
+    <project-list id="projects"></project-list>
 
     <!-- Footer -->
     <footer id="footer">
       <div class="copy">
         <h2>Collaboration is key to shaping the future.</h2>
         <h2>Let's get this conversation started.</h2>
-        <a class="footer-link" href="mailto:biz@niceengineeringllc.com">biz@niceengineeringllc.com</a>
+        <a class="footer-link underlined-link" href="mailto:biz@niceengineeringllc.com">biz@niceengineeringllc.com</a>
         <div class="social-media">
           <ul>
             <li>
@@ -130,14 +132,18 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+    <script src="vendor/slick/slick.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
-    <!-- <script src="js/grayscale.js"></script> -->
     <script src="js/experience.min.js"></script>
+    
+    <!-- Angular Scripts -->
+    <script src="js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/project-list/project-list.module.js"></script>
+    <script src="app/project-list/project-list.component.js"></script>
+    <script src="vendor/angular-slick/slick.js"></script>
 
   </body>
 

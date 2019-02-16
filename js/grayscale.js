@@ -49,4 +49,5 @@
     offset: '80px'
   });
 
+
 })(jQuery); // End of use strict

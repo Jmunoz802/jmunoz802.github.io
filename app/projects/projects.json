@@ -29,10 +29,10 @@
   {
     "name": "Nice.Engineering",
     "projectURL": "",
-    "startDate": "",
-    "endDate": "",
+    "startDate": "Jan, 2018",
+    "endDate": "March, 2018",
     "imgUrl": "img/projects/nice-engineering-banner.png",
     "mobileImgUrl": "img/projects/mobile-nice-engineering-banner.png",
-    "description": ""
+    "description": "This site! Nice.Engineering is our first independent joint venture into refining our craft to make the best Web Experiences. The site has since been updated with Angular v1.7.5 to broaden our expertise with different frameworks."
   }
 ]

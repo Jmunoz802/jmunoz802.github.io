@@ -15,7 +15,7 @@
             <h4 ng-if='project.startDate && project.endDate'> {{project.startDate}} - {{project.endDate}}</h4>
             <h4 ng-if='!project.startDate && project.endDate'> Released {{project.endDate}}</h4>
             <p>{{project.description}}</p>
-            <a class="underlined-link" href="{{project.projectURL}}">
+            <a ng-if='project.projectURL' class="underlined-link" href="{{project.projectURL}}" target="_blank">
               Check it out, HERE, for yourself
             </a>
           </div>

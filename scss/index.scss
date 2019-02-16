@@ -107,6 +107,9 @@
 .btn-circle {
   font-size: 26px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 55px;
   height: 55px;
   margin-top: 15px;
@@ -120,11 +123,20 @@
   border: 2px solid white;
   border-radius: 100% !important;
   background: transparent;
+
+  .fa-angle-double-down{
+    transition: 300ms ease-out;
+  }
+
   &:focus,
   &:hover {
     color: white;
     outline: none;
     background: fade-out(white, .9);
+
+    .fa-angle-double-down {
+      transform: translate(0, 8px);
+    }
   }
 }
 
@@ -145,7 +157,7 @@
   .left {
     width: 37%;
     padding-left: 6%;
-    padding-top: 13rem;
+    padding-top: 9rem;
     text-align: left;
 
     h2 {
@@ -291,9 +303,6 @@ body {
 
     .right {
       padding-top: 4rem;
-      .div {
-
-      }
     }
   }
 
