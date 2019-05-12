@@ -1,5 +1,14 @@
 [
   {
+    "name": "Accelerate Coach",
+    "projectURL": "https://www.accelerate-coach.com/",
+    "startDate": "June, 2018",
+    "endDate": "July, 2018",
+    "imgUrl": "img/projects/acc-coach-banner.png",
+    "mobileImgUrl": "img/projects/mobile-acc-coach-banner.png",
+    "description": "Accelerate coach is a European business and Google partner that coaches business growth and strategy to small and mid-level business."
+  },
+  {
     "name": "SRC Miniboard",
     "projectURL": "https://www.twitch.tv/ext/8jefzhtahl455ftq87euflde7ad69m-1.1.0",
     "startDate": "January, 2018",
@@ -18,21 +27,21 @@
     "description": "Lezay is an international business based in Germany that focuses on offering curated beauty products based on the customers individual's needs."
   },
   {
-    "name": "Accelerate Coach",
-    "projectURL": "https://www.accelerate-coach.com/",
-    "startDate": "June, 2018",
-    "endDate": "July, 2018",
-    "imgUrl": "img/projects/acc-coach-banner.png",
-    "mobileImgUrl": "img/projects/mobile-acc-coach-banner.png",
-    "description": "Accelerate coach is a European business and Google partner that coaches business growth and strategy to small and mid-level business."
+    "name": "Lone Star National Bank",
+    "projectURL": "https://lonestarnationalbank.com/",
+    "startDate": "January, 2017",
+    "endDate": "April, 2017",
+    "imgUrl": "img/projects/lone-star-bank-banner.png",
+    "mobileImgUrl": "img/projects/mobile-lone-star-bank-banner.png",
+    "description": "Lone Star National Bank is one of the largest regional banks in the Rio Grande Valley. The new site included multiple dynamic templates, static pages, and WCAG-AA compliance."
   },
   {
-    "name": "Nice.Engineering",
-    "projectURL": "",
-    "startDate": "Jan, 2018",
-    "endDate": "March, 2018",
-    "imgUrl": "img/projects/nice-engineering-banner.png",
-    "mobileImgUrl": "img/projects/mobile-nice-engineering-banner.png",
-    "description": "This site! Nice.Engineering is our first independent joint venture into refining our craft to make the best Web Experiences. The site has since been updated with Angular v1.7.5 to broaden our expertise with different frameworks."
+    "name": "Flores Funeral Home",
+    "projectURL": "http://www.floresfh.com/",
+    "startDate": "December, 2016",
+    "endDate": "February, 2017",
+    "imgUrl": "img/projects/flores-banner.png",
+    "mobileImgUrl": "img/projects/mobile-flores-banner.png",
+    "description": "Flores is a local funeral home that has been servicing the good people of Pharr for over a hundred years. The funeral home wanted to bring their marketing to the modern standards for reaching customers and marketing."
   }
 ]

@@ -6,6 +6,7 @@ angular
     replace: true,
     templateUrl: 'app/project-list/project-list.template.html',
     controller: function projectListController($http){
+
       var self = this;
       $http.get('app/projects/projects.json').then(function(response){
         self.projects = response.data;
@@ -41,7 +42,9 @@ angular
         ]
       }
 
-      this.slickProjectsConfigLoaded = true;
+      $(document).ready(function(){
+        self.slickProjectsConfigLoaded = true;
+      })
 
     },
   })

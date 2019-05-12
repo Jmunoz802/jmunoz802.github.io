@@ -1,13 +1,10 @@
 <div class="project-list">
-  <h1 class="section-title">Our Work</h1>
+  <h1 class="section-title">My Work & Projects</h1>
   <slick class="slider" ng-if="$ctrl.slickProjectsConfigLoaded" settings="$ctrl.slickProjectsConfig">
     <div class="project-container" ng-repeat="project in $ctrl.projects">
       <div class="project-bg desktop" style="background: url('{{project.imgUrl}}') no-repeat center/cover"></div>
       <div class="project-bg mobile" style="background: url('{{project.mobileImgUrl}}') no-repeat top/cover"></div>
       <div class="project">
-        <!-- <div class="img-container">
-          <img ng-if="project.imgUrl" src="{{project.imgUrl}}"/>
-        </div> -->
         <div class="gradient"></div>
         <div class="copy">
           <h3 class="title">{{project.name}}</h3>
